@@ -7,6 +7,7 @@
 #include <vector>
 
 #include <Eigen/Dense>
+//check to see if my commits use the desiered username
 // Shortcut to avoid  everywhere, DO NOT USE IN .h
 using namespace Eigen;
 ////////////////////////////////////////////////////////////////////////////////
