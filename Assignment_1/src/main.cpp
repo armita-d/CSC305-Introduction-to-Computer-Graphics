@@ -7,7 +7,6 @@
 #include <vector>
 
 #include <Eigen/Dense>
-// just want to check if commiyt works
 // Shortcut to avoid  everywhere, DO NOT USE IN .h
 using namespace Eigen;
 ////////////////////////////////////////////////////////////////////////////////
