@@ -16,7 +16,7 @@ const std::string root_path = DATA_DIR;
 // Computes the determinant of the matrix whose columns are the vector u and v
 double inline det(const Vector2d &u, const Vector2d &v) // substract tells us that which side of u the vector v points to (positive means left, negative means right, zero means they’re parallel).
 {
-    // TODO
+    // TODO(done)
     return u .x() * v.y() - v.x() * u.y(); //u * x() is not u.x(). The dot connects the variable to its function. u.x() means “ask u for its x.” Writing u * x() means “multiply u by something called x”, which doesn’t exist.
 } // use * insted of , 
 
