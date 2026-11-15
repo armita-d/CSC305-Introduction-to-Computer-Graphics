@@ -17,7 +17,7 @@ const std::string root_path = DATA_DIR;
 double inline det(const Vector2d &u, const Vector2d &v) // substract tells us that which side of u the vector v points to (positive means left, negative means right, zero means they’re parallel).
 {
     // TODO
-    return u .x() * u.y() - v.x() * v.y(); //u * x() is not u.x(). The dot connects the variable to its function. u.x() means “ask u for its x.” Writing u * x() means “multiply u by something called x”, which doesn’t exist.
+    return u .x() * v.y() - v.x() * u.y(); //u * x() is not u.x(). The dot connects the variable to its function. u.x() means “ask u for its x.” Writing u * x() means “multiply u by something called x”, which doesn’t exist.
 } // use * insted of , 
 
 // Return true iff [a,b] intersects [c,d]
