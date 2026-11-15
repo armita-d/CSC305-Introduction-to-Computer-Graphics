@@ -61,7 +61,7 @@ std::vector<Vector2d> load_xyz(const std::string &filename)
 void save_xyz(const std::string &filename, const std::vector<Vector2d> &points)
 {
     // TODO(done)
-    std :: ofstream (filename);
+    std :: ofstream out (filename);
     out << points.size() << "/n";
 
     for (size_t i= 0;i< points.size();i++){
