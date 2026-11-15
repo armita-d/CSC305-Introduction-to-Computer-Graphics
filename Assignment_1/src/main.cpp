@@ -14,10 +14,10 @@ using namespace Eigen;
 const std::string root_path = DATA_DIR;
 
 // Computes the determinant of the matrix whose columns are the vector u and v
-double inline det(const Vector2d &u, const Vector2d &v)
+double inline det(const Vector2d &u, const Vector2d &v) // substract tells us that which side of u the vector v points to (positive means left, negative means right, zero means they’re parallel).
 {
     // TODO
-    return 0;
+    return u * x(), u * y() - v * x() , v * y();
 }
 
 // Return true iff [a,b] intersects [c,d]
@@ -45,7 +45,7 @@ std::vector<Vector2d> load_xyz(const std::string &filename)
 {
     std::vector<Vector2d> points;
     std::ifstream in(filename);
-    // TODO
+    // TODO(done)
     int n;
     in >> n;
     for(int i = 0;i < n; i++){
@@ -60,7 +60,7 @@ std::vector<Vector2d> load_xyz(const std::string &filename)
 
 void save_xyz(const std::string &filename, const std::vector<Vector2d> &points)
 {
-    // TODO
+    // TODO(done)
     std :: ofstream (filename);
     out << points.size() << "/n";
 
