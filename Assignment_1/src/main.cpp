@@ -61,6 +61,12 @@ std::vector<Vector2d> load_xyz(const std::string &filename)
 void save_xyz(const std::string &filename, const std::vector<Vector2d> &points)
 {
     // TODO
+    std :: ofstream(filename);
+    out << points.size() << /n;
+
+    for (size_t i= 0;i< points.size();i++){
+        out <<points[i].x << points[i].y << points[i].z << /n; 
+    }
 }
 
 std::vector<Vector2d> load_obj(const std::string &filename)
@@ -100,6 +106,7 @@ int main(int argc, char *argv[])
     const std::string poly_path = root_path + "/polygon.obj";
 
     std::vector<Vector2d> points = load_xyz(points_path);
+    std:: cout << "Loaded" << points.size() << "points\n";
 
     ////////////////////////////////////////////////////////////////////////////////
     //Point in polygon
