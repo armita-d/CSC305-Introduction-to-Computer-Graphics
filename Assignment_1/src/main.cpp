@@ -65,7 +65,7 @@ void save_xyz(const std::string &filename, const std::vector<Vector2d> &points)
     out << points.size() << "/n";
 
     for (size_t i= 0;i< points.size();i++){
-        out <<points[i].x() << points[i].y() << 0 << "/n"; 
+        out <<points[i].x() << " " << points[i].y() << " "<< 0 << "/n"; 
     }
 }
 
