@@ -23,7 +23,7 @@ double inline det(const Vector2d &u, const Vector2d &v) // substract tells us th
 // Return true iff [a,b] intersects [c,d]
 bool intersect_segment(const Vector2d &a, const Vector2d &b, const Vector2d &c, const Vector2d &d)
 {
-    // TODO
+    // TODO(done)
     double side_c = det(b - a, c - a); //The line a→b is the vector b - a. The vector from a to c is c - a. Then det of those two tells us the side
     double side_d = det( b - a, d - a);
 
