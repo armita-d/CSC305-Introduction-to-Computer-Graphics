@@ -24,13 +24,13 @@ double inline det(const Vector2d &u, const Vector2d &v) // substract tells us th
 bool intersect_segment(const Vector2d &a, const Vector2d &b, const Vector2d &c, const Vector2d &d)
 {
     // TODO
-    double side_c = det(b - a, c - a);
+    double side_c = det(b - a, c - a); //The line a→b is the vector b - a. The vector from a to c is c - a. Then det of those two tells us the side
     double side_d = det( b - a, d - a);
 
     double side_a = det(d- c,a - c);
     double side_b = det(d - c,b - c );
 
-    return((side_c * side_d < 0) && (side_a * side_b <0));
+    return((side_c * side_d < 0) && (side_a * side_b <0)); //"opposite sides" simply means the product is negative * A and B are on opposite sides of line CD AND C and D are on opposite sides of line AB
 
 }
 
