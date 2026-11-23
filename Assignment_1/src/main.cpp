@@ -24,7 +24,12 @@ double inline det(const Vector2d &u, const Vector2d &v) // substract tells us th
 bool intersect_segment(const Vector2d &a, const Vector2d &b, const Vector2d &c, const Vector2d &d)
 {
     // TODO
-    return true;
+    double side_c = det(b - a, c - a);
+    double side_d = det( b - a, d - a);
+
+    double side_a = det(d- c,a - d);
+    double side_b = det(d - c,b - d );
+
 }
 
 ////////////////////////////////////////////////////////////////////////////////
