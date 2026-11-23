@@ -27,8 +27,8 @@ bool intersect_segment(const Vector2d &a, const Vector2d &b, const Vector2d &c, 
     double side_c = det(b - a, c - a);
     double side_d = det( b - a, d - a);
 
-    double side_a = det(d- c,a - d);
-    double side_b = det(d - c,b - d );
+    double side_a = det(d- c,a - c);
+    double side_b = det(d - c,b - c );
 
 }
 
