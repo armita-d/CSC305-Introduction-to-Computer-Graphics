@@ -30,6 +30,8 @@ bool intersect_segment(const Vector2d &a, const Vector2d &b, const Vector2d &c, 
     double side_a = det(d- c,a - c);
     double side_b = det(d - c,b - c );
 
+    return((side_c * side_b < 0) && (side_a * side_b <0));
+
 }
 
 ////////////////////////////////////////////////////////////////////////////////
