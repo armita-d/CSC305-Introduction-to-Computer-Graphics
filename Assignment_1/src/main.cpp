@@ -64,7 +64,7 @@ bool is_inside(const std::vector<Vector2d> &poly, const Vector2d &query)
         if intersect_segment(poly, outside, a, b){
             count++;
         }
-    return count % 2 == 0 
+    return count % 2 == 1; // if its odd its inside and ifits even its outside  here we wanna check if its inside so it should be odd  
      }
 }
 }
