@@ -55,7 +55,17 @@ bool is_inside(const std::vector<Vector2d> &poly, const Vector2d &query)
     Vector2d outside (max_x + 1 , max_y + 1); //outside is the name of the new variable. We chose it because this point is outside the polygon.
     // 2. Cast a ray from the query point to the 'outside' point, count number of intersections
     // TODO
-    return true;
+    //Count how many times a ray crosses the polygon, Part 2 casts a ray from the query point to an outside point,
+    // counts how many polygon edges the ray crosses, and uses odd/even crossings to determine inside/outside.
+    int count =0;
+     for(size_t = i = 0; i < poly.size(); ++i){
+        Vector2d a = poly[i];
+        Vector2d b = poly[i+1 % poly.size()];
+        if intersect_segment(poly, outside, a, b){
+            count++;
+        }
+    return count % 2 == 0 
+     }
 }
 }
 
