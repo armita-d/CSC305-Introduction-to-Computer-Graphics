@@ -43,7 +43,7 @@ bool is_inside(const std::vector<Vector2d> &poly, const Vector2d &query)
     // Find the maximum x and y coordinates of the polygon.
     // Adding 1 to both coordinates gives us a point outside the polygon.
     double max_x = poly[0].x();
-    double  max_y = poly.[0].y();
+    double  max_y = poly[0].y();
 
     for(size_t = i; i < poly.size_t; i++){
         if(max_x < poly[i].x()){
