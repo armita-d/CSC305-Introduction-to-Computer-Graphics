@@ -45,7 +45,7 @@ bool is_inside(const std::vector<Vector2d> &poly, const Vector2d &query)
     double max_x = poly[0].x();
     double  max_y = poly.[0].y();
 
-    for(size_t = i; i < size_t; i++){
+    for(size_t = i; i < poly.size_t; i++){
         if(max_x < poly[i].x()){
             max_x = poly[i].(x);
         if(max_y < poly[i].x()){
