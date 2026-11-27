@@ -42,8 +42,8 @@ bool is_inside(const std::vector<Vector2d> &poly, const Vector2d &query)
     // TODO
     // Find the maximum x and y coordinates of the polygon.
     // Adding 1 to both coordinates gives us a point outside the polygon.
-    double max_x = poly[i].x();
-    double  max_y = poly.[i].y();
+    double max_x = poly[0].x();
+    double  max_y = poly.[0].y();
 
     for(size_t = i; i < size_t; i++){
         if(max_x < poly[i].x()){
@@ -56,6 +56,7 @@ bool is_inside(const std::vector<Vector2d> &poly, const Vector2d &query)
     // 2. Cast a ray from the query point to the 'outside' point, count number of intersections
     // TODO
     return true;
+}
 }
 
 ////////////////////////////////////////////////////////////////////////////////
