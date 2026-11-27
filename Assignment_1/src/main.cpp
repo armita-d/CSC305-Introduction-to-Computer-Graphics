@@ -40,7 +40,9 @@ bool is_inside(const std::vector<Vector2d> &poly, const Vector2d &query)
 {
     // 1. Compute bounding box and set coordinate of a point outside the polygon
     // TODO
-    Vector2d outside(0, 0);
+    // Find the maximum x and y coordinates of the polygon.
+    // Adding 1 to both coordinates gives us a point outside the polygon.
+    Vector2d outside = (max_x + 1 , max_y + 1);
     // 2. Cast a ray from the query point to the 'outside' point, count number of intersections
     // TODO
     return true;
