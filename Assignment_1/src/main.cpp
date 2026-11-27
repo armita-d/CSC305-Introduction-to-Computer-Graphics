@@ -52,7 +52,7 @@ bool is_inside(const std::vector<Vector2d> &poly, const Vector2d &query)
             max_y = poly[i].y()
         }
     }
-    Vector2d outside = (max_x + 1 , max_y + 1);
+    Vector2d outside (max_x + 1 , max_y + 1);
     // 2. Cast a ray from the query point to the 'outside' point, count number of intersections
     // TODO
     return true;
