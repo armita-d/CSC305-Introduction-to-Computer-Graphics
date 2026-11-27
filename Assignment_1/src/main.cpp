@@ -49,7 +49,7 @@ bool is_inside(const std::vector<Vector2d> &poly, const Vector2d &query)
         if(max_x < poly[i].x()){
             max_x = poly[i].x();
         if(max_y < poly[i].x()){
-            max_y = poly[i].y()
+            max_y = poly[i].y();
         }
     }
     Vector2d outside (max_x + 1 , max_y + 1); //outside is the name of the new variable. We chose it because this point is outside the polygon.
