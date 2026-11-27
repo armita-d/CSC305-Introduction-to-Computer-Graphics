@@ -39,7 +39,7 @@ bool intersect_segment(const Vector2d &a, const Vector2d &b, const Vector2d &c, 
 bool is_inside(const std::vector<Vector2d> &poly, const Vector2d &query)
 {
     // 1. Compute bounding box and set coordinate of a point outside the polygon
-    // TODO
+    // TODO(done)
     // Find the maximum x and y coordinates of the polygon.
     // Adding 1 to both coordinates gives us a point outside the polygon.
     double max_x = poly[0].x();
